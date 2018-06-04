@@ -1,0 +1,14 @@
+ifeq	($(KERNELRELEASE),)
+	
+KERNEL_SOURCE :=/usr/src/linux-headers-4.4.0-31-generic 
+	PWD := $(shell pwd)
+default: module query_app
+module:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+
+clean:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	rm query_app
+else
+	obj-m+=module_arg.o 
+endif

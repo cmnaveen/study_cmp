@@ -1,0 +1,1 @@
+cmd_/home/naveen/Videos/drivers/chr_ioctl.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/naveen/Videos/drivers/chr_ioctl.ko /home/naveen/Videos/drivers/chr_ioctl.o /home/naveen/Videos/drivers/chr_ioctl.mod.o

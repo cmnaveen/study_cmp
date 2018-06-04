@@ -1,0 +1,34 @@
+#if called directly from the command line, invoke the kernel build system.
+#ifeq ($(KERNELRELEASE),)
+ 
+   
+#default: module app_ioctl
+ 
+#module:
+#	make -C /lib/modules/$(shell uname -r)/build  M=$(PWD) modules
+ 
+#clean:
+#	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+#	${RM} app_ioctl
+ 
+# Otherwise KERNELRELEASE is defined; we've been invoked from the
+# kernel build system and can use its language.
+#else
+ 
+#    obj-m := chr_ioctl.o
+ 
+#endif
+obj-m := fcd.o
+#CCPREFIX = /home/naveen/Videos/raspberrypi/tools/arm-bcm2708/arm-bcm2708hardfp-linux-gnueabi/arm-bcm2708hardfp-linux-gnueabi 
+#CCPREFIX = /home/naveen/Videos/raspberrypi/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/arm-linux-gnueabihf 
+CCPREFIX = arm-bcm2708-linux-gnueabi
+
+all:
+	make ARCH=arm CROSS_COMPILE=${CCPREFIX} -C /home/naveen/Videos/raspberrypi/linux M=$(PWD) modules
+
+
+clean:
+	make ARCH=arm CROSS_COMPILE=${CCPREFIX} -C /home/naveen/Videos/raspberrypi/linux M=$(PWD) clean
+
+
+
