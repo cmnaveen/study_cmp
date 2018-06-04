@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+NUM_URBS	usb_camera.c	12;"	d	file:
+camera_endpoint_max_bpi	usb_camera.c	/^static unsigned int camera_endpoint_max_bpi(struct usb_device *dev,                $/;"	f	file:
+check_for_number	app.c	/^bool check_for_number(char number[])$/;"	f
+class	usb_camera.c	/^struct usb_class_driver class;$/;"	v	typeref:struct:usb_class_driver
+copy_video_data_to_file	usb_camera.c	/^static void copy_video_data_to_file (void *ptr, int size)$/;"	f	file:
+debug_dir	usb_camera.c	/^struct dentry *debug_dir;$/;"	v	typeref:struct:dentry
+debug_file	usb_camera.c	/^struct dentry *debug_file;$/;"	v	typeref:struct:dentry
+dev	usb_camera.c	/^}*dev;$/;"	v	typeref:struct:usb_camera_device
+device_open	usb_camera.c	/^int device_open(struct inode *inode, struct file *filep)$/;"	f
+ep	usb_camera.c	/^	struct usb_host_endpoint *ep;                                           $/;"	m	struct:usb_camera_device	typeref:struct:usb_camera_device::usb_host_endpoint	file:
+fops	usb_camera.c	/^const struct file_operations fops = {                            $/;"	v	typeref:struct:file_operations
+fp	usb_camera.c	/^struct file *fp;$/;"	v	typeref:struct:file
+glob	usb_camera.c	/^int glob = 1;$/;"	v
+intf	usb_camera.c	/^	struct usb_interface *intf;                                                 $/;"	m	struct:usb_camera_device	typeref:struct:usb_camera_device::usb_interface	file:
+intfnum	usb_camera.c	/^	int intfnum;                                                                $/;"	m	struct:usb_camera_device	file:
+lock	usb_camera.c	/^	struct mutex lock;$/;"	m	struct:usb_camera_device	typeref:struct:usb_camera_device::mutex	file:
+main	app.c	/^int main (int argc, char *argv[])$/;"	f
+name	usb_camera.c	/^	char name[32];$/;"	m	struct:usb_camera_device	file:
+npackets	usb_camera.c	11;"	d	file:
+obj-m	Makefile	/^obj-m:=usb_camera.o$/;"	m
+oldfs	usb_camera.c	/^mm_segment_t oldfs ;$/;"	v
+parse_interface	usb_camera.c	/^int parse_interface(struct usb_camera_device *dev)$/;"	f
+pos	usb_camera.c	/^loff_t pos = 0 ;$/;"	v
+status	usb_camera.c	/^	__u8 *status;$/;"	m	struct:usb_camera_device	file:
+stream_ioctl	usb_camera.c	/^long stream_ioctl(struct file *fp, unsigned int pid, unsigned long num )$/;"	f
+streamoff	usb_camera.c	/^void streamoff (void)$/;"	f
+streamon	usb_camera.c	/^void streamon (void)$/;"	f
+udev	usb_camera.c	/^	struct usb_device *udev;                                                    $/;"	m	struct:usb_camera_device	typeref:struct:usb_camera_device::usb_device	file:
+urb	usb_camera.c	/^	struct urb *urb[5];$/;"	m	struct:usb_camera_device	typeref:struct:usb_camera_device::urb	file:
+urb_init	usb_camera.c	/^static int urb_init (struct usb_camera_device *dev)                                     $/;"	f	file:
+urb_size	usb_camera.c	/^	int urb_size;$/;"	m	struct:usb_camera_device	file:
+urb_status_complete	usb_camera.c	/^static void urb_status_complete (struct urb *urb)                                $/;"	f	file:
+usb_camera	usb_camera.c	/^static struct usb_driver usb_camera =$/;"	v	typeref:struct:usb_driver	file:
+usb_camera_device	usb_camera.c	/^struct usb_camera_device {$/;"	s	file:
+usb_disconnect	usb_camera.c	/^static void usb_disconnect(struct usb_interface *interface)                       $/;"	f	file:
+usb_exit	usb_camera.c	/^module_exit (usb_exit);$/;"	v
+usb_exit	usb_camera.c	/^static void __exit usb_exit (void)$/;"	f	file:
+usb_idtable	usb_camera.c	/^static struct usb_device_id usb_idtable[] =$/;"	v	typeref:struct:usb_device_id	file:
+usb_init	usb_camera.c	/^module_init (usb_init);$/;"	v
+usb_init	usb_camera.c	/^static int __init usb_init (void)$/;"	f	file:
+usb_probe	usb_camera.c	/^static int usb_probe(struct usb_interface *interface, $/;"	f	file:
+validate_cmd_args	app.c	/^int validate_cmd_args(int argc, char *argv[])$/;"	f
+vdev	usb_camera.c	/^	struct v4l2_device vdev;$/;"	m	struct:usb_camera_device	typeref:struct:usb_camera_device::v4l2_device	file:
